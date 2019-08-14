@@ -2,14 +2,14 @@ import React from 'react'
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
 
 const Navigation = () => (
-  <Navbar variant="dark" bg="dark" expand="lg" collapseOnSelect>
+  <Navbar fixed="top" variant="dark" bg="dark" expand="lg" collapseOnSelect>
     <Container>
       <Navbar.Brand href="#" className="text-capitalize">
         business
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Nav className="text-capitalize">
+        <Nav className="text-capitalize ml-auto">
           <Nav.Link href="#about" className="text-capitalize">about</Nav.Link>
           <Nav.Link href="#services" className="text-capitalize">services</Nav.Link>
           <Nav.Link href="#contact" className="text-capitalize">contact</Nav.Link>
