@@ -6,20 +6,22 @@ import Portfolio from './Portfolio'
 import Features from './Features'
 import Action from './Action'
 import Footer from './Footer'
+import Marketing from './Marketing'
 
 const App = () => (
-  <div>
+  <>
     <Navigation />
     <Header />
     <Container>
       <h1 className="my-4">Welcome to My Business</h1>
+      <Marketing />
       <Portfolio />
       <Features />
       <hr />
       <Action />
     </Container>
     <Footer />
-  </div>
+  </>
 )
 
 export default App
