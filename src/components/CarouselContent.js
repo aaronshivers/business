@@ -4,7 +4,7 @@ import { Carousel, Image } from 'react-bootstrap'
 const CarouselContent = ({ image, imgAlt, heading, body }) => (
   <>
     <Image
-      className="d-block w-100 carousel-image"
+      className="d-block w-100"
       src={ image }
       alt={ imgAlt }
     />
