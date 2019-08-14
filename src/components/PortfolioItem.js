@@ -8,8 +8,8 @@ const PortfolioItem = ({ image, heading, body }) => (
         <Card.Img src={ image } variant="top" />
       </a>
       <Card.Body>
-        <Card.Title as="h5">
-          <a href="#" className="text-decoration-none">{ heading }</a>
+        <Card.Title as="h4">
+          <a href="#" className="text-decoration-none text-primary">{ heading }</a>
         </Card.Title>
         <Card.Text>{ body }</Card.Text>
       </Card.Body>
