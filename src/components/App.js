@@ -5,6 +5,7 @@ import Header from './Header'
 import Portfolio from './Portfolio'
 import Features from './Features'
 import Action from './Action'
+import Footer from './Footer'
 
 const App = () => (
   <div>
@@ -16,8 +17,8 @@ const App = () => (
       <Features />
       <hr />
       <Action />
-      <h1 className="display-1 text-center">business</h1>
     </Container>
+    <Footer />
   </div>
 )
 
