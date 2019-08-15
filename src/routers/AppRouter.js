@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import AboutPage from '../pages/AboutPage'
 import ServicesPage from '../pages/ServicesPage'
+import ContactPage from '../pages/ContactPage'
 import NotFoundPage from '../pages/NotFoundPage'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
@@ -14,6 +15,7 @@ const AppRouter = () => (
         <Route path="/" exact component={ HomePage } />
         <Route path="/about" component={ AboutPage } />
         <Route path="/services" component={ ServicesPage } />
+        <Route path="/contact" component={ ContactPage } />
         <Route component={ NotFoundPage } />
       </Switch>
     <Footer />
