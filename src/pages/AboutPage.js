@@ -1,6 +1,6 @@
 import React from 'react'
-import { LinkContainer } from 'react-router-bootstrap'
 import { Container, Breadcrumb, Row, Col, Image } from 'react-bootstrap'
+import BreadcrumbContainer from '../components/BreadcrumbContainer'
 import Heading from '../components/Heading'
 import Team from '../components/Team'
 import img1 from '../images/about-1.jpg'
@@ -59,12 +59,7 @@ const aboutData = [
 const AboutPage = () => (
   <Container>
     <Heading heading="about" subheading="subheading" />
-    <Breadcrumb>
-      <LinkContainer to="/">
-        <Breadcrumb.Item className="text-capitalize">home</Breadcrumb.Item>
-      </LinkContainer>
-      <Breadcrumb.Item className="text-capitalize" active>about</Breadcrumb.Item>
-    </Breadcrumb>
+    <BreadcrumbContainer location="about" />
     <Row>
       <Col lg={ 6 }>
         <Image src={ img1 } fluid rounded className="mb-4" />
