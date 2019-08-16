@@ -3,14 +3,16 @@ import { Container, Row } from 'react-bootstrap'
 import BreadcrumbContainer from '../components/BreadcrumbContainer'
 import Heading from '../components/Heading'
 import Marketing from '../components/Marketing'
-import Contact from '../components/Contact'
+import ContactDetails from '../components/ContactDetails'
+import ContactForm from '../components/ContactForm'
 
 const ContactPage = () => (
   <Container>
     <Heading heading="contact" subheading="subheading" />
     <BreadcrumbContainer location="contact" />
     <Row>
-      <Contact />
+      <ContactDetails />
+      <ContactForm />
     </Row>
   </Container>
 )

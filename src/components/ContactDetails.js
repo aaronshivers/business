@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
 
-const Contact = () => (
+const ContactDetails = () => (
   <Col lg={ 4 } className="mb-4">
     <h3 className="text-capitalize">contact details</h3>
     <p className="text-capitalize">
@@ -25,4 +25,4 @@ const Contact = () => (
   </Col>
 )
 
-export default Contact
+export default ContactDetails
