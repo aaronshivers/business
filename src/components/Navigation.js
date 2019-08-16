@@ -32,13 +32,13 @@ const Navigation = () => (
               <NavDropdown.Item className="text-capitalize">1 column portfolio</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/portfolio-2-col">
-              <NavDropdown.Item className="text-capitalize">1 column portfolio</NavDropdown.Item>
+              <NavDropdown.Item className="text-capitalize">2 column portfolio</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/portfolio-3-col">
-              <NavDropdown.Item className="text-capitalize">1 column portfolio</NavDropdown.Item>
+              <NavDropdown.Item className="text-capitalize">3 column portfolio</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/portfolio-4-col">
-              <NavDropdown.Item className="text-capitalize">1 column portfolio</NavDropdown.Item>
+              <NavDropdown.Item className="text-capitalize">4 column portfolio</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/portfolio-item">
               <NavDropdown.Item className="text-capitalize">single portfolio item</NavDropdown.Item>
