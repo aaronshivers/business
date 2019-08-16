@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Pagination } from 'react-bootstrap'
 
-const PaginationContainer = () => {
-  let active = 2
+const PaginationContainer = ({ getCurrentPage, maxPages }) => {
+  const [ active, setActive ] = useState(1)
   let items = []
-  for (let number = 1; number <= 5; number++) {
+
+  const handlePageChange = number => {
+    setActive(number)
+    getCurrentPage(number)
+  }
+
+  for (let number = 1; number <= maxPages; number++) {
     items.push(
-      <Pagination.Item key={ number } active={ number === active }>
+      <Pagination.Item
+        key={ number }
+        active={ number === active }
+        onClick={ () => handlePageChange(number) }
+      >
         { number }
       </Pagination.Item>
     )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import BreadcrumbContainer from '../components/BreadcrumbContainer'
 import Heading from '../components/Heading'
@@ -69,17 +69,33 @@ const portfolioData = [
   }
 ]
 
-const Portfolio1Page = () => (
-  <Container>
-    <Heading heading="portfolio 1" subheading="subheading" />
-    <BreadcrumbContainer location="portfolio 1" />
-    {
-      portfolioData.map((item, i) => (
-        <Portfolio1Item key={ i } { ...item } />
-      ))
-    }
-    <PaginationContainer />
-  </Container>
-)
+const Portfolio1Page = () => {
+  const [ currentPage, setCurrentPage ] = useState(1)
+  const [ range ] = useState(4)
+
+  const getCurrentPage = page => {
+    setCurrentPage(page)
+  }
+
+  return (
+    <Container>
+      <Heading heading="portfolio 1" subheading="subheading" />
+      <BreadcrumbContainer location="portfolio 1" />
+      {
+        portfolioData.map((item, i) => {
+          const start = (currentPage - 1) * range
+          const end = start + range
+          return (
+            i >= start && i < end && <Portfolio1Item key={ i } { ...item } />
+          )}
+        )
+      }
+      <PaginationContainer
+        getCurrentPage={ getCurrentPage }
+        maxPages={ Math.ceil(portfolioData.length / range) }
+      />
+    </Container>
+  )
+}
 
 export default Portfolio1Page
