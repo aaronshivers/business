@@ -6,6 +6,7 @@ import ServicesPage from '../pages/ServicesPage'
 import ContactPage from '../pages/ContactPage'
 import Portfolio1Page from '../pages/Portfolio1Page'
 import Portfolio2Page from '../pages/Portfolio2Page'
+import Portfolio3Page from '../pages/Portfolio3Page'
 import NotFoundPage from '../pages/NotFoundPage'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
@@ -20,6 +21,7 @@ const AppRouter = () => (
         <Route path="/contact" component={ ContactPage } />
         <Route path="/portfolio-1-col" component={ Portfolio1Page } />
         <Route path="/portfolio-2-col" component={ Portfolio2Page } />
+        <Route path="/portfolio-3-col" component={ Portfolio3Page } />
         <Route component={ NotFoundPage } />
       </Switch>
     <Footer />
