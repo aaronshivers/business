@@ -10,7 +10,7 @@ const Portfolio1Item = ({ image, heading, body }) => (
         </a>
       </Col>
       <Col md={ 5 }>
-        <h3>{ heading }</h3>
+        <h3 className="text-capitalize">{ heading }</h3>
         <p>{ body }</p>
         <a href="#" className="btn btn-primary text-capitalize">view project</a>
       </Col>
